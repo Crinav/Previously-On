@@ -1,7 +1,7 @@
 # Previously-On
 A Heartstone Like
 
-![alt text](https://github.com/Crinav/Previously-On/blob/master/PO.png "main page")  
+![alt text](https://github.com/Crinav/Previously-On/blob/main/PO.png "main page")  
 
 A personnal project that replicates the basics functionalities of Haertstone (1 weeks) to learn Unit Tests
 
@@ -19,19 +19,19 @@ Copyright (©) Christophe Navarro <navarro.christophe@gmail.com>
 
 ## Screenshots
   
-![alt text](https://github.com/Crinav/Previously-On/blob/master/PO1.png "main page")  
+![alt text](https://github.com/Crinav/Previously-On/blob/main/PO1.png "main page")  
 ___  
 
-![alt text](https://github.com/Crinav/Previously-On/blob/master/PO2.png "search")
+![alt text](https://github.com/Crinav/Previously-On/blob/main/PO2.png "search")
 ___  
 
-![alt text](https://github.com/Crinav/Previously-On/blob/master/PO3.png "profil")
+![alt text](https://github.com/Crinav/Previously-On/blob/main/PO3.png "profil")
 ___  
 
-![alt text](https://github.com/Crinav/Previously-On/blob/master/PO4.png "profil") 
+![alt text](https://github.com/Crinav/Previously-On/blob/main/PO4.png "profil") 
 ___  
 
-![alt text](https://github.com/Crinav/Previously-On/blob/master/PO5.png "profil") 
+![alt text](https://github.com/Crinav/Previously-On/blob/main/PO5.png "profil") 
 ___  
 
-![alt text](https://github.com/Crinav/Previously-On/blob/master/PO6.png "profil")   
+![alt text](https://github.com/Crinav/Previously-On/blob/main/PO6.png "profil")   
