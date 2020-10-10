@@ -1,13 +1,22 @@
 # Previously-On
-A Heartstone Like
+A cross platform application to get Series informations from an API
 
 ![alt text](https://github.com/Crinav/Previously-On/blob/main/PO.png "main page")  
 
-A personnal project that replicates the basics functionalities of Haertstone (1 weeks) to learn Unit Tests
+A group project (2) that make call to an API and display all details from a Serie and its Seasons/Episodes
 
 ## Languages
-* ECMAS6
-* Jasmine
+* Angular V2
+* IONIC
+
+## Features 
+* Log in with BetaSeries credentials 
+* Add/Remove a serie to your fav
+* Archive a serie
+* Instant Search Serie
+* Post a comment
+* Mark an episode 'seen'
+* Add a friend
 
 ## Contact  
 
