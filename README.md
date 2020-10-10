@@ -13,7 +13,7 @@ A group project (2) that make call to an API and display all details from a Seri
 * Log in with BetaSeries credentials 
 * Add/Remove a serie to your fav
 * Archive a serie
-* Instant Search Serie
+* Realtime Search
 * Post a comment
 * Mark an episode 'seen'
 * Add a friend
@@ -21,7 +21,7 @@ A group project (2) that make call to an API and display all details from a Seri
 ## Contact  
 
 Copyright (©) Christophe Navarro
- 
+
 <navarro.christophe@gmail.com>
 
 [linkedin](https://www.linkedin.com/in/christophe-navarro-b5173a171)  
@@ -29,9 +29,7 @@ Copyright (©) Christophe Navarro
 [Portfolio](https://portfolio-chris.herokuapp.com/) 
 
 ## Screenshots
-  
-![alt text](https://github.com/Crinav/Previously-On/blob/main/PO1.png)  
-___  
+ 
 
 ![alt text](https://github.com/Crinav/Previously-On/blob/main/PO2.png)
 ___  
