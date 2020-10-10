@@ -1,0 +1,98 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start" *ngIf="display == 'results'">
+      <ion-back-button (click)="backBtn()"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">
+      <h4>Previously On ...</h4>
+    </ion-title>
+  </ion-toolbar>
+  <ion-item class="searchbar">
+    <ion-label>Catégorie</ion-label>
+    <ion-select [(ngModel)]="type" (ionChange)="searchChanged($event)">
+
+      <ion-select-option value="all">Toutes les séries</ion-select-option>
+      <ion-select-option value="mySeries">Mes Séries</ion-select-option>
+      <ion-select-option value="archived">Archivées</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-searchbar [(ngModel)]="searchTerm" (ionChange)="searchTitle($event)"></ion-searchbar>
+  <div *ngIf="display == 'myresults'">
+    <ion-item>
+      <ion-title class="ion-text-center" color="success">
+        <h5>Mes Séries</h5>
+      </ion-title>
+    </ion-item>
+    <ion-item>
+      <ion-text class="colonne">Archiver&nbsp;&nbsp;Suppr.</ion-text>
+    </ion-item>
+  </div>
+  <div *ngIf="display == 'archived'">
+    <ion-item>
+      <ion-title class="ion-text-center" color="secondary">
+        <h5>Archivées</h5>
+      </ion-title>
+    </ion-item>
+    <ion-item>
+      <ion-text class="colonne">Désarchiver&nbsp;&nbsp;Suppr.</ion-text>
+    </ion-item>
+  </div>
+  <div *ngIf="display == 'results'">
+    <ion-item>
+      <ion-title class="ion-text-center" color="primary">Toutes les Séries</ion-title>
+    </ion-item>
+  </div>
+</ion-header>
+<ion-content>
+  <ion-list>
+
+    <div *ngIf="display == 'myresults'">
+      <ng-container *ngFor="let item of (myresults | async)">
+      <ion-item button detail="false" *ngIf="!archivedSerie.includes(item.id)" (pressup)="onPressUp($event, item.id)">
+        <ion-avatar slot="start">
+          <img [src]="item.images.show" alt="avatar">
+        </ion-avatar>
+        <ion-label text-wrap>
+          <h3><b>{{ item.title }}</b></h3>
+          {{ item.creation }}
+        </ion-label>
+        <ion-icon slot="end" name="remove-circle-outline" (click)="removeSerie(item.id)"></ion-icon>
+        <ion-toggle *ngIf="!archivedSerie.includes(item.id)" (ionChange)="check($event, item.id)">Archiver</ion-toggle>
+        <ion-toggle checked *ngIf="archivedSerie.includes(item.id)" (ionChange)="check($event, item.id)">Archiver
+        </ion-toggle>
+      </ion-item>
+    </ng-container>
+    </div>
+
+    <div *ngIf="display == 'archived'">
+      <ng-container *ngFor="let item of (archivedResults | async)">
+      <ion-item button detail="false"  (pressup)="onPressUp($event, item.id)">
+        <ion-avatar slot="start">
+          <img [src]="item.images.show" alt="avatar">
+        </ion-avatar>
+        <ion-label text-wrap>
+          <h3><b>{{ item.title }}</b></h3>
+          {{ item.creation }}
+        </ion-label>
+        <ion-icon slot="end" name="remove-circle-outline" (click)="removeSerie(item.id)"></ion-icon>
+        <ion-toggle checked *ngIf="archivedSerie.includes(item.id)" (ionChange)="check($event, item.id)">desArchiver
+        </ion-toggle>
+      </ion-item>
+    </ng-container>
+    </div>
+
+    <div *ngIf="display == 'results'">
+      <ion-item detail="false" button *ngFor="let item of (results | async)" (pressup)="onPressUp($event, item.id)">
+        <ion-avatar slot="start">
+          <img [src]="item.images.show" alt="avatar">
+        </ion-avatar>
+        <ion-label text-wrap>
+          <h3>{{ item.title }}</h3>
+          {{ item.creation }}
+        </ion-label>
+        <ion-icon slot="end" name="remove-circle-outline" (click)="removeSerie(item.id)" *ngIf="mySeries.includes(item.id)"></ion-icon>
+        <ion-icon slot="end" name="add-circle" (click)="addSerie(item.id)" *ngIf="!mySeries.includes(item.id)"></ion-icon>
+      </ion-item>
+    </div>
+  </ion-list>
+</ion-content>

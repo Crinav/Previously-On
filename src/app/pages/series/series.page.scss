@@ -1,0 +1,22 @@
+.searchbar{
+    font-size:15px;
+    height: 40px;
+}
+ion-toggle {
+    height: 15px;
+    width: 30px;
+    --background: rgb(178, 179, 178);
+    --background-checked: #1ec51e;
+    --handle-background: #5b5c5b;
+    --handle-background-checked: rgb(20, 136, 9);
+}
+.colonne{
+    position: absolute;
+    font-size:10px;
+    right: 20px;
+}
+ion-icon {
+    color: #5cb85c ;
+    opacity: 1;
+    
+}

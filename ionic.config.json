@@ -1,0 +1,7 @@
+{
+  "name": "PrevOn",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
