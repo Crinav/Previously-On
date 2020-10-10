@@ -20,7 +20,9 @@ A group project (2) that make call to an API and display all details from a Seri
 
 ## Contact  
 
-Copyright (©) Christophe Navarro <navarro.christophe@gmail.com>
+Copyright (©) Christophe Navarro
+ 
+<navarro.christophe@gmail.com>
 
 [linkedin](https://www.linkedin.com/in/christophe-navarro-b5173a171)  
 
@@ -28,19 +30,19 @@ Copyright (©) Christophe Navarro <navarro.christophe@gmail.com>
 
 ## Screenshots
   
-![alt text](https://github.com/Crinav/Previously-On/blob/main/PO1.png "main page")  
+![alt text](https://github.com/Crinav/Previously-On/blob/main/PO1.png)  
 ___  
 
-![alt text](https://github.com/Crinav/Previously-On/blob/main/PO2.png "search")
+![alt text](https://github.com/Crinav/Previously-On/blob/main/PO2.png)
 ___  
 
-![alt text](https://github.com/Crinav/Previously-On/blob/main/PO3.png "profil")
+![alt text](https://github.com/Crinav/Previously-On/blob/main/PO3.png)
 ___  
 
-![alt text](https://github.com/Crinav/Previously-On/blob/main/PO4.png "profil") 
+![alt text](https://github.com/Crinav/Previously-On/blob/main/PO4.png) 
 ___  
 
-![alt text](https://github.com/Crinav/Previously-On/blob/main/PO5.png "profil") 
+![alt text](https://github.com/Crinav/Previously-On/blob/main/PO5.png) 
 ___  
 
-![alt text](https://github.com/Crinav/Previously-On/blob/main/PO6.png "profil")   
+![alt text](https://github.com/Crinav/Previously-On/blob/main/PO6.png)   
